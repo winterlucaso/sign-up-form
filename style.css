@@ -90,8 +90,6 @@ header {
     position: relative;
     top: 20%;
     background-color: rgba(0, 0, 0, .6);
-    /* opacity: 30%; */
-    
 }
 
 #logo {
@@ -115,25 +113,60 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     padding: 20px;
 }
 
 main,
 #section-pitch,
 #section-account {
-    background-color: var(--color-main-bkgd, orange);
+    background-color: var(--color-main-bkgd, grey);
+}
+
+#section-pitch {
+    text-align: left;
+}
+
+.section-item {
+    margin: 10px;
 }
 
 #section-forms {
     background-color: rgb(240, 240, 240);
 }
 
-fieldset {
+form {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-/* .form-item {
+.form-item {
+    display: flex;
+    flex-direction: column;
     padding: 5px;
-} */
+}
+
+.form-text {
+    font-size: 14px;
+    color: rgba(25, 25, 25, 0.80);
+}
+
+em {
+    font-style: italic;
+}
+
+#btn-create-account {
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(14, 117, 14);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(14, 117, 14);
+    font-weight: bold;
+}
